@@ -27,6 +27,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header style={{padding: '16px 0', textAlign: 'center', background: '#f5f5f5', marginBottom: 24}}>
+          <div style={{fontWeight: 'bold', fontSize: 18, marginBottom: 8}}>This site is built with Next.js</div>
+          <nav style={{display: 'flex', gap: 16, justifyContent: 'center'}}>
+            <a href="/" style={{textDecoration: 'underline'}}>Home</a>
+            <a href="/about" style={{textDecoration: 'underline'}}>About</a>
+            <a href="/contact" style={{textDecoration: 'underline'}}>Contact</a>
+            <a href="/products" style={{textDecoration: 'underline'}}>Products</a>
+          </nav>
+        </header>
         {children}
       </body>
     </html>
